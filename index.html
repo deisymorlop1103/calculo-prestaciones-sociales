@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <title>historia de usuario</title>
+</head>
+
+<body>
+    <section class="form-titulo">
+
+        <h2>Logo</h2>
+        <section class="form-registro">
+            <h3>Registro</h3>
+            <form id="form-registro" name="form-registro" action="index.html" method="POST">
+                <label for="usuername" class="control">Username</label><br>
+                <input class="controlt" type="text" id="user-name" name="user-name"><br>
+                <label for="contra" class="control">Contraseña</label><br>
+                <input class="controlt" type="password" id="contrasena" name="contrasena"><br>
+                <label for="pregunta" class="control">Pregunta de Seguridad</label><br>
+                <select id="preguntas" name="preguntas" class="controlt">
+            <option value="mascota">nombre de su primera mascota</option>
+            <option value="abuela">Segundo nombre de su abuela</option>
+            <option value="nacimiento">luguar de nacimiento de su papa</option>
+        </select><br>
+                <label for="respuesta" class="control">Respuesta de Seguridad</label><br>
+                <input class="controlt" type="password" id="respuestase" name="respuestase"><br>
+                <button><input type="button" id="btn-registrar" name="btn-registrar" value="Registrar"></button><br>
+                <a href="login.html" id="enlace-login" name="enlace-login">Login</a>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(185, 155, 185);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    font-size: 16px;
+  }
+  
+   #banner{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: rgb(83, 182, 149);
+    padding: 20px 0;  
+    width: 100%;
+  }
+ 
+  .container-nav{
+    height:100px;
+  }
+  
+  .titulo{
+    margin-top: 55px;
+    font-size: 40px;
+}
+.form{
+   margin-top: 70px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    margin-top: 70px;
+     width: 100%;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.3rem;
+ }
+input{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #000;
+    text-align: center;
+    color:#aa9483 ;
+  }
+  
+  .lineaVertical{
+    border-left: 3px solid #aa9483;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+ 
