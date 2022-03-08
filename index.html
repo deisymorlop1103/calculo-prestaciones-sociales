@@ -1,38 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
-    <title>historia de usuario</title>
+    <title>Calculo prestaciones</title>
+    <link rel='stylesheet' type='text/css' href='/cestilos.css'>
+    <link rel='stylesheet' type='text/css' href='reset.css'>
+    <script src="operaciones.js"></script>
 </head>
 
 <body>
-    <section class="form-titulo">
+    <div id="banner">
+        <header class="main-nav">
+             <div class="container-nav">
+              <p><span class="titulo">Calculo de prestaciones sociales</span></p>
+            </div>
+        </header>
+    </div>
 
-        <h2>Logo</h2>
-        <section class="form-registro">
-            <h3>Registro</h3>
-            <form id="form-registro" name="form-registro" action="index.html" method="POST">
-                <label for="usuername" class="control">Username</label><br>
-                <input class="controlt" type="text" id="user-name" name="user-name"><br>
-                <label for="contra" class="control">Contraseña</label><br>
-                <input class="controlt" type="password" id="contrasena" name="contrasena"><br>
-                <label for="pregunta" class="control">Pregunta de Seguridad</label><br>
-                <select id="preguntas" name="preguntas" class="controlt">
-            <option value="mascota">nombre de su primera mascota</option>
-            <option value="abuela">Segundo nombre de su abuela</option>
-            <option value="nacimiento">luguar de nacimiento de su papa</option>
-        </select><br>
-                <label for="respuesta" class="control">Respuesta de Seguridad</label><br>
-                <input class="controlt" type="password" id="respuestase" name="respuestase"><br>
-                <button><input type="button" id="btn-registrar" name="btn-registrar" value="Registrar"></button><br>
-                <a href="login.html" id="enlace-login" name="enlace-login">Login</a>
-            </form>
-        </section>
-    </section>
+   <section> 
+    
+    <div class="formulario">
+     <fieldset>   
+      <p> <span class="titulo">Datos del Empleado</span></p>
+    <form class="form" id="formul" name="formularioe" action="prestaciones.php" method="GET">
+     
+      <br><br>
+            <table>
+                <tr>
+                    <td> <label for="salario"><b>Salario</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="sal" id="sal" placeholder="Ingrese salario" pattern="[0-9]+"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="transporte"><b>Aux. Transporte</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="tra" id="tra" disabled> </td>
+                    <td> <input type="hidden" name="transpo" id="transpo"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="comisiones"><b>Comisiones</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="com" id="com" value="" placeholder="Ingrese comisiones" pattern="[0-9]+"> </td>
+                </tr>
+                 <tr>
+                    <td> <label for="hediurna"><b>Hora Extra Diurna</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="hediurna" id="hediurna" value="" placeholder="Hora Extra Diurna" pattern="[0-9]+"> </td>
+                </tr>                 
+                <tr>
+                    <td> <label for="henocturna"><b>Hora Extra Nocturna</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="henocturna" id="henocturna" value="" placeholder="Hora Extra nocturna" pattern="[0-9]+"> </td>
+                </tr>  
+                <tr>
+                 <tr>
+                    <td> <label for="hediurnaf"><b>Hora Extra  Diurna F/D</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="hediurnaf" id="hediurnaf" value="" placeholder="Hora Extra Diurna F/D" pattern="[0-9]+"> </td>
+                </tr> 
+                <tr>
+                    <td> <label for="henocturnaf"><b>Hora Extra Nocturna F/D</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="henocturnaf" id="henocturnaf" value="" placeholder="Hora Extra nocturna F/D" pattern="[0-9]+"> </td>
+                </tr> 
+                <tr>
+                    <td> <label for="totalhe"><b>Total Hora Extra</b></label> </p>
+                    </td>
+                    <td> <input type="text" name="totalhe" id="totalhe" value="" disabled>
+                     <input type="hidden" name="totalhex" id="totalhex"> </td>     
+                <tr>
+                    <td> <input type="button" name="enviar" value="calcular" onclick="auxilio()"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" onclick="limpiarFormulario()" value="Limpiar formulario">
+                       
+                </tr>
+               
+            </table>
+        </fieldset>  
+    </form>
+</div>
+</section>
+<section>
+    <div class="footer">	&copy; DEISY MORENO LÓPEZ  <span class="lineaVertical"></span> Github: deisymorlop1103
+      <br><br>
+      <div> <p class="cita">"La ciencia es la estetica de la inteligencia".</p></div>
+    </div>
+  </section>
 </body>
 
 </html>
