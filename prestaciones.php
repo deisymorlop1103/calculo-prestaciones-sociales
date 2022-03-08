@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="./script/libreria3.js"></script>
+    <script src="libreria3.js"></script>
 </head>
 
 <body>
@@ -76,7 +76,7 @@
                 <tr>
 
                     <td align="center">
-                        <a href="./otra.php"><input type="submit" name="pasar" value="Siguiente"></a>
+                        <a href="otra.php"><input type="submit" name="pasar" value="Siguiente"></a>
                     </td>
                 </tr>
             </table>
